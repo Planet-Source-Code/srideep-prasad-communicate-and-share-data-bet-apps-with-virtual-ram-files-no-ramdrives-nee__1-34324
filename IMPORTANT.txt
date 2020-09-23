@@ -1,0 +1,16 @@
+Installing vFile32 Version 1.0
+----------------------------------------------------------------------------------------------------------------------------------------------------
+1>Unzip the zip file using Winzip (with the Use Folder Names checkbox filtered)
+2>Locate the MemHlp.cpp and Memhlp.def files and compile it into a DLL using your C++ compiler 
+	OR
+    Locate the Memhlp.dlb file and rename it as Memhlp.dll
+3>Copy Memhlp.dll to your c:\windows\system (Win9x /me) or System32 (WinNT/2K/XP) folder
+4>Then compile the VFile32.vbp and place the DLL in say C:\YourFolder
+5>Open Demo.vbp and try to compile it... Most probably VB will complain about a missing reference...
+    VB will then pop up the references box... Unselect the MISSING:Virtual File ..... component and select 
+    browse. Locate VFile32.dll in C:\YourFolder and click OK...
+6>Now compile the demo and run two (or more) instances of it !
+
+That's it !
+Hope this component is of use to you... And if it is, your votes will be greatly appreciated. Also please
+contact me at srideepprasad@digitalme.com in case of any problems...
